@@ -500,7 +500,7 @@ noscript {
 }
 
 .logo-top img {
-  height: 100%;
+  height: 80%;
   z-index: 2;
 }
 
@@ -950,7 +950,6 @@ noscript {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 200px;
 }
 
 .about-section,
