@@ -2,13 +2,20 @@
 const techStack = [
   { src: "./src/png/htmllogo.png", alt: "Html skill", tooltip: "HTML" },
   { src: "./src/png/csslogo.png", alt: "CSS skill", tooltip: "CSS" },
+  { src: "./src/png/mui.png", alt: "MUI skill", tooltip: "Material UI" },
   { src: "./src/png/jslogo.png", alt: "JS skill", tooltip: "JS" },
+  {
+    src: "./src/png/jest.png",
+    alt: "Jest skill",
+    tooltip: "Jest Unit Testing",
+    style: "width: 55% !important;",
+  },
   {
     src: "./src/png/bootstraplogo.png",
     alt: "Bootstrap skill",
     tooltip: "BOOTSTRAP",
   },
-  { src: "./src/png/reactlogo.png", alt: "React skill", tooltip: "REACTJS" },
+  { src: "./src/png/reactlogo.png", alt: "React.js skill", tooltip: "REACTJS" },
   { src: "./src/png/nextlogo.png", alt: "Next.js skill", tooltip: "NEXT JS" },
   { src: "./src/png/node.png", alt: "Node.js skill", tooltip: "NODE JS" },
   {
@@ -21,6 +28,12 @@ const techStack = [
     src: "./src/png/graphql.png",
     alt: "GraphQL skill",
     tooltip: "GRAPHQL",
+    style: "width: 65% !important;",
+  },
+  {
+    src: "./src/png/nest.png",
+    alt: "Nest.js skill",
+    tooltip: "NEST JS",
     style: "width: 65% !important;",
   },
   {
