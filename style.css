@@ -1131,10 +1131,10 @@ noscript {
 }
 
 .tech-stack-box {
-  width: 160px;
-  height: 160px;
+  width: 100px;
+  height: 100px;
   justify-content: center;
-  border-radius: 30px;
+  border-radius: 20px;
   border: 1px solid var(--tech-stack-box-border-color);
   position: relative;
   flex-direction: column;
@@ -1165,7 +1165,7 @@ noscript {
   transition-duration: 0.2s;
   pointer-events: none;
   letter-spacing: 0.5px;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   backdrop-filter: blur(5px);
   font-weight: 500;
 }
