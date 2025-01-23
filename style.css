@@ -1837,6 +1837,10 @@ footer {
   .image-div {
     padding: 0 0 0 80px;
   }
+
+  .tooltip {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
