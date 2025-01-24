@@ -841,9 +841,12 @@ noscript {
 }
 
 .cta:hover span,
-.text,
-.tooltip {
+.text {
   color: #fff;
+}
+
+.tooltip {
+  color: var(--color-white);
 }
 
 .resume-btn,
@@ -2134,19 +2137,20 @@ footer {
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
   z-index: 1000;
-  background: linear-gradient(82.3deg, #965de9 10.8%, #6c3870 94.3%);
-  color: #ffffff;
   border-radius: 25px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
   display: flex;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
+  transition: 0.3s ease; /* Smooth transition for hover */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background: linear-gradient(82.3deg, #965de9 10.8%, #6358ee 94.3%);
+  transition: 0.3s ease; /* Smooth transition for hover */
+  color: white;
 }
 
 .whatsapp-button a {
@@ -2163,6 +2167,11 @@ footer {
 }
 
 .whatsapp-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(
+    82.3deg,
+    #6358ee 10.8%,
+    #965de9 94.3%
+  ); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow effect */
 }
