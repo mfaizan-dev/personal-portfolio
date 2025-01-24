@@ -1851,6 +1851,10 @@ footer {
     height: 30px !important;
     margin-right: 0 !important;
   }
+
+  .whatsapp-button {
+    padding: 10px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
