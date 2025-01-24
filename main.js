@@ -135,3 +135,15 @@ const mouseMove = (e) => {
 
 window.addEventListener("mousemove", mouseMove);
 window.addEventListener("resize", windowResize);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const whatsappButton = document.querySelector(".whatsapp-float");
+  // Example: Hide button on scroll down
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      whatsappButton.style.opacity = "0";
+    } else {
+      whatsappButton.style.opacity = "1";
+    }
+  });
+});
