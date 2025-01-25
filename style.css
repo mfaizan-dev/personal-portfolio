@@ -1860,7 +1860,7 @@ footer {
   }
 
   .tooltip {
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -1982,13 +1982,13 @@ footer {
 
   .tech-stack-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 items per row */
+    gap: 15px; /* Smaller gap for better fit on smaller screens */
   }
 
   .tech-stack-box {
     width: 100%;
-    height: calc(76vw / 2);
+    height: calc(76vw / 3);
   }
 }
 
