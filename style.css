@@ -1990,6 +1990,13 @@ footer {
   .tooltip {
     margin-top: 0.75rem !important;
   }
+
+  .dp img,
+  .dp::after,
+  .dp::before {
+    width: 320px;
+    border-radius: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 430px) {
