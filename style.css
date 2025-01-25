@@ -1858,10 +1858,6 @@ footer {
   .whatsapp-button {
     padding: 10px !important;
   }
-
-  .tooltip {
-    margin-top: 0.5rem;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1989,6 +1985,10 @@ footer {
   .tech-stack-box {
     width: 100%;
     height: calc(76vw / 3);
+  }
+
+  .tooltip {
+    margin-top: 0.75rem !important;
   }
 }
 
