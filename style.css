@@ -500,7 +500,7 @@ noscript {
 }
 
 .logo-top img {
-  height: 80%;
+  height: 65%;
   z-index: 2;
 }
 
@@ -1371,7 +1371,7 @@ footer {
 
 .footer-background {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   background-color: #0b0b0b;
   display: flex;
   align-items: flex-end;
@@ -1392,7 +1392,7 @@ footer {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1524,7 +1524,7 @@ footer {
 }
 
 .footer-avatar-img {
-  width: 100%;
+  width: 80%;
   z-index: 2;
 }
 
@@ -2185,4 +2185,20 @@ footer {
   ); /* Reverse gradient on hover */
   transform: translateY(-2px); /* Slight lift on hover */
   box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow effect */
+}
+
+@keyframes rotateOnAxis {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.footer-avatar-img {
+  animation: rotateOnAxis 3s linear infinite; /* Spins the image on its Y-axis */
+  display: block;
+  height: auto;
+  transform-origin: center; /* Ensures it rotates around its center */
 }
