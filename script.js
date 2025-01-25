@@ -26,6 +26,12 @@ const techStack = [
     alt: "React.js skill",
     tooltip: "REACT JS",
   },
+  {
+    src: "./src/png/react_native.png",
+    alt: "ReactNative skill",
+    tooltip: "REACT NATIVE",
+    tooltipStyle: "width: 110px !important;",
+  },
   { src: "./src/png/nextlogo.png", alt: "Next.js skill", tooltip: "NEXT JS" },
   { src: "./src/png/node.png", alt: "Node.js skill", tooltip: "NODE JS" },
   {
@@ -47,10 +53,62 @@ const techStack = [
     style: "width: 65% !important;",
   },
   {
+    src: "./src/png/gcp.png",
+    alt: "GCP skill",
+    tooltip: "GOOGLE CLOUD",
+    tooltipStyle: "width: 120px !important;",
+  },
+  {
+    src: "./src/png/mongo.png",
+    alt: "MongoDB skill",
+    tooltip: "MONGO-DB",
+  },
+  {
+    src: "./src/png/firebase.png",
+    alt: "Firebase skill",
+    tooltip: "FIREBASE",
+    style: "width: 65% !important;",
+  },
+  {
+    src: "./src/png/sql.png",
+    alt: "SQL skill",
+    tooltip: "SQL DB",
+    style: "width: 90% !important;",
+  },
+  {
+    src: "./src/png/pgsql.png",
+    alt: "PostgreSQL skill",
+    tooltip: "POSTGRESQL",
+    style: "width: 63% !important;",
+  },
+  {
+    src: "./src/png/elastic.png",
+    alt: "ElasticSearch skill",
+    tooltip: "ELASTIC SEARCH",
+    style: "width: 63% !important;",
+    tooltipStyle: "width: 130px !important;",
+  },
+  {
+    src: "./src/png/auth.png",
+    alt: "Auth skill",
+    tooltip: "AUTHENTICATION",
+  },
+  {
+    src: "./src/png/saml.png",
+    alt: "SAML/SSO skill",
+    tooltip: "SAML SSO",
+    style: "width: 65% !important;",
+  },
+  {
     src: "./src/png/githublogo.png",
     alt: "GitHub skill",
     tooltip: "GITHUB",
-    class: "needtobeinvert",
+  },
+  {
+    src: "./src/png/ci.png",
+    alt: "CircleCI skill",
+    tooltip: "CIRCLE-CI",
+    style: "width: 65% !important;",
   },
 ];
 
@@ -75,6 +133,8 @@ techStack.forEach((tech) => {
   const span = document.createElement("span");
   span.className = "tooltip";
   span.textContent = tech.tooltip;
+
+  if (tech.tooltipStyle) span.style.cssText = tech.tooltipStyle;
 
   li.appendChild(img);
   li.appendChild(span);
