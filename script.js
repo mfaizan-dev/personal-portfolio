@@ -14,7 +14,7 @@ const techStack = [
     src: "./src/png/jest.png",
     alt: "Jest skill",
     tooltip: "JEST",
-    style: "width: 55% !important;",
+    style: "width: 50% !important;",
   },
   {
     src: "./src/png/bootstraplogo.png",
@@ -92,12 +92,14 @@ const techStack = [
     src: "./src/png/auth.png",
     alt: "Auth skill",
     tooltip: "AUTHENTICATION",
+    style: "width: 70% !important;",
   },
   {
     src: "./src/png/saml.png",
     alt: "SAML/SSO skill",
     tooltip: "SAML SSO",
     style: "width: 65% !important;",
+    tooltipStyle: "width: 110px !important;",
   },
   {
     src: "./src/png/githublogo.png",
@@ -109,6 +111,7 @@ const techStack = [
     alt: "CircleCI skill",
     tooltip: "CIRCLE-CI",
     style: "width: 65% !important;",
+    tooltipStyle: "width: 100px !important;",
   },
 ];
 
