@@ -401,6 +401,7 @@ noscript {
   justify-content: flex-end;
   gap: 80px;
   color: var(--color-white);
+  margin-right: 3rem;
 }
 
 .navbar-tabs-ul li {
@@ -1019,6 +1020,7 @@ noscript {
   width: 60%;
   display: flex;
   flex-direction: column;
+  text-align: justify;
 }
 
 .about-info p {
@@ -1123,7 +1125,7 @@ noscript {
 .tech-stack-wrapper {
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 3rem;
   margin-top: 50px;
 }
 
@@ -1886,7 +1888,6 @@ footer {
   }
 
   .contact-btn-div {
-    height: 140px;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -1978,13 +1979,13 @@ footer {
 
   .tech-stack-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 items per row */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 3 items per row */
     gap: 15px; /* Smaller gap for better fit on smaller screens */
   }
 
   .tech-stack-box {
     width: 100%;
-    height: calc(76vw / 3);
+    height: calc(76vw / 4);
   }
 
   .tooltip {
