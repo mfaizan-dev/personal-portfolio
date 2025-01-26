@@ -1,3 +1,7 @@
+let mouseXStartPoint;
+let mouseXRange;
+let mouseYEndPoint;
+
 var audio = document.getElementById("audioPlayer"),
   loader = document.getElementById("preloader");
 
@@ -94,11 +98,7 @@ window.addEventListener("scroll", () => {
 
 let mybutton = document.getElementById("backtotopbutton");
 
-function scrollFunction() {
-  document.body.scrollTop > 400 || document.documentElement.scrollTop > 400
-    ? (mybutton.style.display = "block")
-    : (mybutton.style.display = "none");
-}
+function scrollFunction() {}
 
 function scrolltoTopfunction() {
   document.body.scrollTop = 0;
@@ -121,11 +121,6 @@ const mouseMove = (e) => {
     fracXValue =
       (currentXPosition = e.clientX - mouseXStartPoint) / mouseXRange;
     fracYValue = (currentYPosition = e.clientY) / mouseYEndPoint;
-    let t = pupilStartPoint + fracXValue * pupilRangeX,
-      o = pupilStartPoint + fracYValue * pupilRangeY;
-    pupilsArr.forEach((e) => {
-      e.style.transform = `translate(${t}px, ${o}px)`;
-    });
   },
   windowResize = () => {
     mouseXEndPoint = window.innerWidth;
@@ -135,15 +130,3 @@ const mouseMove = (e) => {
 
 window.addEventListener("mousemove", mouseMove);
 window.addEventListener("resize", windowResize);
-
-document.addEventListener("DOMContentLoaded", () => {
-  const whatsappButton = document.querySelector(".whatsapp-float");
-  // Example: Hide button on scroll down
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-      whatsappButton.style.opacity = "0";
-    } else {
-      whatsappButton.style.opacity = "1";
-    }
-  });
-});
